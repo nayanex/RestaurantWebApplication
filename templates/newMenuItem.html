@@ -11,7 +11,7 @@
                     <dt>Name:</dt>
                         <dd><input type="text" size="30" name="name"></dd>
                     <dt>Description:</dt>
-                        <dd><textarea name='description' rows='5' cols='40' placeholder='Enter the description of the item'></textarea>></dd>
+                        <dd><textarea name='description' rows='5' cols='40' placeholder='Enter the description of the item'></textarea></dd>
                     <dt>Price:</dt>
                         <dd><input type="text" size="9" name="price"></dd>
                     <dt>Course:</dt>
@@ -21,6 +21,7 @@
                         <dd><input type='radio' name='course' value='Beverage'>Beverage</dd>
                 </dl>
                 <input type="submit" value="Create">
+                <a href="{{ url_for('showMenu', restaurant_id=restaurant_id)}}">Cancel</a>
             </form>
         </div>
     </body>
